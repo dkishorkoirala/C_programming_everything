@@ -1,0 +1,27 @@
+C variables
+variables are containers for storing data values, like numbers and characters.
+
+in C, there are different types of variables (defined with different keywords), 
+- int : stores integers(whole number) without decimal values from -infinity to +infinity
+- float : stores floating point numbers, with decimal values from -infinity to +infinity
+-char: stores single characters, such as 'a' or 'A' characters are surrounded by single quotes
+
+Declaring (creating) a variable
+to create a variable without assigning a value , and  assign the value later:
+
+ex.
+//declaring variable
+int myNum;
+
+//assign a value to the variable
+myNum = 15;
+
+output variables:
+printf() function prints text we learned earlier
+
+if we :
+int myNum = 15;
+printf(myNum); // nothing happens
+
+to output variables in C, you must get familiar with somthing called " format specifiers "
+next chapter.

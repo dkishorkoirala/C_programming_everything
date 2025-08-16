@@ -1,0 +1,42 @@
+C format specifiers
+
+format specifiers are used together with the printf() function to tell the compiler
+what type of data the variable is storing.
+basically "placeholder" for the variabe value.
+
+A format specifier starts with percentage sign %, followed by a character
+
+for ex. to output the value of an int variabe, use format specifier %d 
+surrounded by double quotes (" ") inside the printf() function
+
+ex. int myNum = 15;
+printf("%d", myNum);  // Outputs 15
+
+to print other types, use %c for char and %f for float:
+
+int myNum = 15;
+char myLetter = 'A';
+float myFloat = 3.14;
+
+printf("%d\n", myNum); // Outputs 15
+printf("%c\n", myLetter); // Outputs A
+printf("%f\n", myFloat); // Outputs 3.140000
+
+to combine both text and a variable, seperate them with a comma inside the printf() function
+
+ex.
+int myNum = 15;
+printf("My favorite number is: %d", myNum);
+
+to print different types in a single printf() function we can use the following:
+int myNum = 15;
+char myLetter = 'A';
+
+printf("My number is %d and my letter is %c", myNum, myLetter);
+
+print the values without variables
+we can aslo print a value without storing it in a variabes, as long as we use the correct 
+format specifier
+
+printf("My lucky number is %d\n", 7);
+printf("My name starts with the letter %c", 'A');

@@ -1,0 +1,40 @@
+change variable values
+
+if we assign a new value to an existing variable, it will overwrite the previous value:
+
+int myNum = 15; //myNum is 15
+myNum = 10; //myNum is now 10
+
+we can also assign the value of one variable to another:
+
+ex. 
+int myNum = 15;
+int myOtherNum = 23; 
+
+//assign the value of myOtherNum (23) to myNum 
+myNum = myOtherNum;
+
+//myNum is now 23, instead of 15
+printf("%d", myNum);
+
+or copy values to empty variables:
+
+// Create a variable and assign the value 15 to it
+int myNum = 15;
+
+// Declare a variable without assigning it a value
+int myOtherNum;
+
+// Assign the value of myNum to myOtherNum
+myOtherNum = myNum;
+
+// myOtherNum now has 15 as a value
+printf("%d", myOtherNum);
+
+add variables together
+to add a variable to another variable, we use the + operator:
+
+int x = 5;
+int y = 6;
+int sum = x + y;
+printf("%d", sum);

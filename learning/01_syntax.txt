@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!");
+  return 0;
+}
+
+#include <stdio.h> is a header file library that lets us work with input and output functions, 
+such as printf() (used in line 4). Header files add functionality to C programs.
+
+A blank line. C ignores white space. But we use it to make the code more readable.
+
+Another thing that always appear in a C program is main(). This is called a function. 
+Any code inside its curly brackets {} will be executed.
+
+printf() -> function used to output/print text to the screen here hello World
+
+Note: every statement ends with ; "semi-colon"
+
+retrun 0 indicates the end of the program
+

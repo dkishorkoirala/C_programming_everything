@@ -1,0 +1,78 @@
+Output (Print Text)
+to output values or print text in c , we use the printf() function:
+
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!");
+  return 0;
+}
+
+Double quotes (" ")
+must be wrapped with Double quotes (" ")
+
+we can use as much as printf() as we want
+however, note that it doesnot insert a new line at the end of the output
+
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!");
+  printf("I am learning C.");
+  printf("And it is awesome!");
+  return 0;
+}
+
+output:
+Hello World!I am learning C.And it is awesome!
+
+new-line:
+to insert new line we use "\n" character
+
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!\n");
+  printf("I am learning C.");
+  return 0;
+}
+
+output:
+Hello World!
+I am learning C.
+
+we can also output multiple line with a single printf() function as
+
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!\nI am learning C.\nAnd it is awesome!");
+  return 0;
+}
+
+output:
+Hello World!
+I am learning C.
+And it is awesome!
+
+tips:
+two \n character after each other will create a blank line:
+ex.
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!\n\n");
+  printf("I am learning C.");
+  return 0;
+}
+
+output:
+Hello World!
+
+I am learning C.
+
+NOTE: these \n character is called "escape sequence"
+other escape sequence are \t (horizontal tab), \\ (insert backslash), \r (return), 
+\a (alert) and \" (insert double quotes) 
+
+

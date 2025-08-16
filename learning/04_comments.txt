@@ -1,0 +1,23 @@
+Comments 
+they are used to explain code, to make it more readable and 
+, to prevent execution when testing alternative code
+
+two types:
+- single line
+- multi-line
+
+single line starts with // 
+ex. 
+//this is comment 
+printf("Hello World!");
+
+printf("Hello World!"); //this is a comment used at the end of the line
+
+C- multi-line comments:
+multi-line comments start with /* and end with */
+any text between /* and */ will be ignored by the compiler
+
+/* The code below will print the words Hello World!
+to the screen, and it is amazing */
+printf("Hello World!");
+

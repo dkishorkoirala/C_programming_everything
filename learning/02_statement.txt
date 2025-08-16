@@ -1,0 +1,17 @@
+a computer program is a list of "instructions" to be "executed" by computer
+
+in programming language, these programming instructions are statements
+
+printf("Hello World!");
+
+it is important that we end a statement with a semicolon ";"
+
+many statements:
+most c programs contains many statements
+and are exefcuted one after another in same order they are written
+
+ex.
+printf("Hello World!");
+printf("Have a good day!");
+return 0;
+
