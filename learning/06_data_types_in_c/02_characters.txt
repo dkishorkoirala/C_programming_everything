@@ -1,0 +1,34 @@
+The char type
+
+the char data type is used to store a single character.
+
+the character must be surrounded by single quotes like 'a' or 'C' and we use the %c 
+format specifier to print it.
+
+ex.
+char myGrade = 'A';
+printf("%c", myGrade);
+
+alternatively, ,if you are familar with ASCII, you can use ASCII values to display certain 
+characters, note that these values are not surrounded by quotes(' ') as they are numbers;
+
+char a = 65, b = 66, c = 67;
+
+printf("%c %c %c", a, b, c);
+
+tip: A list oof all ASCII values can be found in ASCII reference table
+
+Notes on characters
+if we try to store more than a single character, it will only print the last character:
+ex.
+char myText = 'Hello';
+printf("%c", myText);
+
+Note: Don't use the char type for storing multiple character, as it may produce errors.
+
+To store multiple characters( or whole word), use strings(which we will learn more about in a later):
+char myText[] = "Hello";
+printf("%s", myText);
+
+we use string for storing multiple characters/text, and the char type for single characters.
+

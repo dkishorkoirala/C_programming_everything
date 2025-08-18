@@ -1,0 +1,33 @@
+Constants 
+
+if you don't want other (or yourself) to change existing values, we can use const keyword
+this will declare the variable as "Constant", which means Unchangeable and read-only
+
+ex:
+const int myNum = 15;
+myNum = 10; // will result in an error
+
+we should always declare the variable as constant whe we have values that are unlikely 
+to change:
+
+ex:
+const int minutesPerHour = 60;
+
+Notes on constants
+
+when we declare a constant variable, it must be assigned with a value:
+ex:
+like this:
+const int minutesPerHour = 60;
+
+//this however will not work
+const int minutesPerHour;
+minutesPerHour = 60; // error
+
+good practice
+another thing about constant variables, is that it is considered good practice to declare them 
+with uppercase.
+
+it is not required, but useful for code readability and common for C programmers:
+
+const int BIRTHYEAR = 1980;

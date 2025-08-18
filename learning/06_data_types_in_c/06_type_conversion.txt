@@ -1,0 +1,89 @@
+Type Conversion:
+sometimes, we have to convert the value of one data type to type.
+this is known as type Conversion
+
+for example, if you try to divide two integers, 5 by 2 you would expect the result 
+to be 2.5 but since we are working with integers, the result will be 2.
+
+ex:
+int x = 5;
+int y = 2;
+int sum = 5 / 2;
+
+printf("%d", sum); // Outputs 2
+
+to get the right result, we need to know how type conversion works.
+there are two types of conversion in C:
+- implecit conversion: (automatically)
+- explicit conversion: (manually)
+
+implicit conversion:
+implicit conversion is done automatically by the compiler when we assign a value of one type to another.
+
+for example: if we assing an int value to a float type:
+ex:
+float myFloat = 5;
+printf("%f", myFloat); // Outputs 5.000000
+
+as we can see, the compiler automatically convert the int value 5 to a float value 5.000000.
+
+this can be risky, as we might loose control over specific values in certain situaltions.
+
+especially if it was the other way around - the following example automatically converts 
+the float value 9.99 to an int value 9:
+
+ex:
+int myInt = 9.99;
+printf("%d", myInt); // Outputs 9
+
+what happened to .99? we might want the data in our program! so being carefull is the key
+it is important that we know how the compiler work in the situaltions, to avoid unexpected results.
+
+as another example, if you divide two integers : 5 by 2 we know that sum is 2.5 and as know from the 
+beginning of the page, if we store the sum as an integer, the result will only display the number 2. 
+Therefore, it would be better to store the sum as a float or a double
+
+float sum = 5 / 2;
+
+printf("%f", sum); // 2.000000
+
+why is the result 2.000000 not 2.5 because 5 and 2 are still integers in the division
+here we need to manually convert the integer values to floating-point values 
+
+Explict Conversion:
+Explicit conversion is done manually by placing the type in a parentheses () in front of the value.
+
+considering our problem from the above example
+
+float sum = (float) 5 / 2;
+
+printf("%f", sum); // 2.500000
+
+we can also place the type in front of a variable:
+int num1 = 5;
+int num2 = 2;
+float num = (float) num1 / num2;
+
+printf("%f", num); // 2.500000
+
+and since we learned about decimal precision, we could make the output even cleaner by
+removing the extra zeros (if we like):
+
+int num1 = 5;
+int num2 = 2;
+float sum = (float) num1 / num2;
+
+printf("%.1f", sum); 
+
+real-Life example:
+here's a real-life example of data types and type conversion where we create a program
+to calculate the percentage of a user's score in relation to the maximum score in a game:
+
+ex:
+int maxScore = 500;
+int userScore= 423;
+
+float percentage = (float) userScore / maxScore * 100;
+
+printf("User's percentage is %.2f", percentage);
+

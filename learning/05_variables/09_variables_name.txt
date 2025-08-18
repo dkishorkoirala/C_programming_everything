@@ -1,0 +1,23 @@
+C Variable Names
+
+all c variables must be identified with unique names.
+these unique name are called identifiers.
+
+identifiers can be short names (like x and y) or more discriptive names (age, sum, totalVolume).
+
+Note:
+recommended to use descriptive names in order to create understandable and maintainable code.
+
+ex. 
+int minutesPerHour = 60;
+// ok, but not so easy to understand with m actually is 
+int m = 60;
+
+the general rules for naming variables are:
+
+- names can contain letters, digits and underscores
+- names must start with a letter or underscore(_)
+- name are case-sensitive (myVar and myvar are different variables)
+- names cannot contain whitespace or special characters like !, #, % etc
+- reserved words (Such as int) cannot be used as names
+

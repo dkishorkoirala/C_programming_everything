@@ -1,0 +1,32 @@
+Real-life example
+
+we often use simplified variable names to match their data types
+(myInt or myNum for int types, myChar for char types and so on).
+this is done to avoid confusion
+
+however, for a practical example of using variables, we have created a program
+that stores different data about a college student:
+
+ex.
+// Student data
+int studentID = 15;
+int studentAge = 23;
+float studentFee = 75.25;
+char studentGrade = 'B';
+
+// Print variables
+printf("Student id: %d\n", studentID);
+printf("Student age: %d\n", studentAge);
+printf("Student fee: %f\n", studentFee);
+printf("Student grade: %c", studentGrade);
+
+calculate the area of a rectangle:
+
+int length = 4, width = 6, area;
+
+area = length * width;
+
+printf("length is %d\n", length);
+printf("width is %d\n", width);
+printf("Area of the rectangle is %d\n",area);
+

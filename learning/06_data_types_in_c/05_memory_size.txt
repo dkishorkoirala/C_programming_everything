@@ -1,0 +1,41 @@
+get the memory size
+
+we introduced in the data types chapter that the memory size of a variable varies 
+depending on the type:
+
+data type        memory size
+int              2 or 4 bytes
+float            4 bytes
+double           8 bytes
+char             1 byte
+
+the memory size refers to how much space a type occupies in the computer's memory.
+
+to actually get the size (in bytes) of a data type or variable, use the sizeof operator:
+
+int myInt;
+float myFloat;
+double myDouble;
+char myChar;
+
+printf("%zu\n", sizeof(myInt));
+printf("%zu\n", sizeof(myFloat));
+printf("%zu\n", sizeof(myDouble));
+printf("%zu\n", sizeof(myChar));
+
+note that wwe use the %zu format specifier to print the result, instead of %d. THis is beacuse
+the compiler expects the sizeof operator to return a value of type size_t, which is an 
+unsigned integer type. On some computers it ,ight work with %d, but it is safer and more 
+portable to use %zu, which is specifically designed for printing size_t values.
+
+by knowing size of data type it helps us to understand how much memory is consumed by a 
+variable. important when writing larger program or working with limited memory, because it can
+affect both performance and efficiency
+
+for ex: the size of char type is 1 byte, which means if you have an array of 1000 char values,
+it will occupy 1000 bytes (1kb) of memory.
+
+using the right data type for the right purpose will save memory and improve the performance of 
+your program.
+
+we will learn more about the sizeof operator later , and how to use it in different scenerios.

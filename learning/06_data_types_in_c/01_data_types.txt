@@ -1,0 +1,40 @@
+Data types
+
+as explained in the variables chapter, a variable in C must be a specified data type, and 
+we must use a format specifier inside the printf() function to display it:
+
+ex:
+// Create variables
+int myNum = 5;             // Integer (whole number)
+float myFloatNum = 5.99;   // Floating point number
+char myLetter = 'D';       // Character
+
+// Print variables
+printf("%d\n", myNum);
+printf("%f\n", myFloatNum);
+printf("%c\n", myLetter);
+
+Basic Datatypes:
+the data type specifies the size and type of information the varibale will store.
+in this tutorial, we will focus on the most basic ones:
+
+data type:      size            Description                             ex
+int             2 or 4 bytes    stores whole number, without decimal    1
+float           4 bytes         stores fractional numbers, containing one or more decimals. storing 6-7 decimal digits        1.99
+double          8 bytes         stores fractional numbers, containing one or more decimals. storing 15 decimal digits       1.999999
+char            1 byte          stores single character                 'A'
+
+Basic Format specifiers:
+there are different format specifiers for each data type.
+
+format specifier                 Data type           ex  
+%d or %i                           int                1
+%f of %F                           float             1.99
+%lf                                 double           1.999999
+%c                                    char            'A'
+%s                                  used for strings(text), which we will cover later
+
+Note:
+it is important that you use the correct format specifier for the specified data type
+if not the program may produce errors or even crash.
+
