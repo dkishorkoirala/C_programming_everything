@@ -1,0 +1,24 @@
+Real life example:
+
+let's think of a "real life example" where we need to find out if a person is old enough to vote.
+
+int myAge = 25;
+int votingAge = 18;
+
+printf("%d", myAge >= votingAge); // Returns 1 (true), meaning 25 year olds are allowed to vote!
+
+better version:
+
+#include <stdio.h>
+
+int main(){
+    int myAge = 25;
+    int votingAge = 18;
+
+    if (myAge >= votingAge) {
+        printf("You are old enough to vote!");
+    } else {
+        printf("You are not old enough to vote!");
+    }
+    return 0;
+}

@@ -1,0 +1,70 @@
+Booleans 
+very often, in programming we will need a data type that can only have one of two values
+- yes/no
+- on/off
+- true/false
+
+for this, C has a bool data type which is known as Booleans
+Booleans represent one of two values: true or false
+
+Boolean variables
+in C, the bool type is not a built-in data type, like int or char
+
+it was introduced in C99, and you must import the following header file to use it:
+#include <stdbool.h>
+
+a boolean variable is declared with the bool keyword ad can take the values true or false:
+
+bool isProgrammingFun = true;
+bool isFishTasty = false;
+
+before trying to print the boolean variables, you should know that boolean values are returned
+as integers
+1 (or any other number that is not 0) represent true
+0 represent false
+
+therefore, we must use the %d format specifier to print boolean value:
+
+// Create boolean variables
+bool isProgrammingFun = true;
+bool isFishTasty = false;
+
+// Return boolean values
+printf("%d", isProgrammingFun);   // Returns 1 (true)
+printf("%d", isFishTasty);
+
+however it is more common to return a boolean value by comparing values and variables.
+
+COmparing values and variables
+
+comparing values are useful in programming, because it helps us to find answers and make decisions
+
+for example, you can use a comparison operator such as the greater than(>) operator to 
+compare two values
+
+printf("%d", 5 > 3); // Returns 1 (true)
+
+for the example above, you can see that the return value is a boolean value(1)
+
+you can also compare two variables:
+
+int x = 10;
+int y = 9;
+printf("%d", x > y); // Returns 1 (true)
+
+in the example below, we use the equal to(==) operator to compare different values:
+
+printf("%d", 10==10); // Returns 1 (true)
+printf("%d", 10==20); // Returns 0 (false)
+
+
+you are not limited to only compare numbers. you can also compare boolean variables, or even 
+special structures, like arrays(which we will learn later)
+
+ex:
+bool isProgrammingFun = true;
+bool isFishTasty = false;
+
+printf("%d", isProgrammingFun == isFishTasty);
+
+remember to include the header file: #include <stdbool.h> when working with bool variables
