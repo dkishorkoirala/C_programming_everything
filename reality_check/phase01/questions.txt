@@ -1,0 +1,10 @@
+1. Write a program to declare two integers a = 10, b = 20 and print their sum.
+2. Write a program to check whether the number n = 15 is greater than 10 or not.
+3. Write a program to print "Even" if n = 8 is even, otherwise print "Odd".
+4. Write a program to declare a float pi = 3.14 and print its value.
+5. Write a program to check if x = 5 is equal to y = 7. Print "Equal" if true, otherwise "Not Equal".
+6. Write a program to check if a given number n = -3 is positive or negative.
+7. Write a program to declare marks = 45. If marks are 50 or more, print "Pass", otherwise print "Fail".
+8. Write a program to calculate and print the remainder when 25 is divided by 6.
+9. Write a program to check if n = 12 is divisible by 3. Print "Divisible" if yes, else "Not Divisible".
+10. Write a program to declare a = 2, b = 3, c = 5. If the sum of a and b is greater than c, print "Yes", otherwise print "No".

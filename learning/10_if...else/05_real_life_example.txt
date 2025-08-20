@@ -1,0 +1,45 @@
+Real_life example:
+
+this example shows how you can use if....else to "open a door" if the user enters the 
+correct code:
+
+int doorCode = 1337;
+
+if (doorCode == 1337) {
+  printf("Correct code.\nThe door is now open.");
+} else {
+  printf("Wrong code.\nThe door remains closed.");
+}
+
+this example shows how you can use if...else to find out if a number is positive or negative:
+
+int num = 10;
+
+if (num>0){
+    printf("%d is a positive number.", num);
+} else if (num<0){
+    printf("%d is a negative number.", num);
+} else{
+    printf("%d is zero.", num);
+}
+
+find out if a person is old enough to vote:
+
+int votingAge = 18;
+int myAge = 25;
+
+if (myAge >= votingAge) {
+    printf("You are old enough to vote!");
+}else{
+    printf("You are not old enough to vote!");
+}
+
+find out if a number is even or odd:
+
+int num = 10;
+
+if (num % 2 == 0) {
+    printf("%d is even.", num);
+}else{
+    printf("%d is odd.", num);
+}
